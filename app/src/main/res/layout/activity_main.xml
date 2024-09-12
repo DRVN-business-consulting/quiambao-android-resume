@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="top|center_horizontal"
+        android:scaleType="center"
+
+        android:src="@drawable/jihyo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        />
+
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:orientation="vertical"
+
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_address"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="@string/address"
+           android:textStyle="bold"
+           android:gravity="start|center"
+
+        />
+        </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="start|center"
+           android:orientation="horizontal"
+           >
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="40dp"
+               android:src="@drawable/ic_phone"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="09942339066"
+                android:textStyle="bold"
+               android:gravity="start|center"
+
+               />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="start|center"
+           android:orientation="horizontal"
+           >
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="40dp"
+               android:src="@drawable/ic_email"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="Quiambao.Michaelc@gmail.com"
+               android:textStyle="bold"
+               android:gravity="start|center"
+
+               />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="start|center"
+           android:orientation="horizontal"
+           >
+           <ImageView
+               android:layout_width="64dp"
+               android:layout_height="40dp"
+               android:src="@drawable/ic_fb"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="fb.com/iemmichael"
+               android:textStyle="bold"
+               android:gravity="start|center"
+
+               />
+       </LinearLayout>
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <CheckBox
+               android:id="@+id/work"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Work Experience" />
+
+           <CheckBox
+               android:id="@+id/skill"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Skills" />
+
+           <CheckBox
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Educational Background" />
+
+       </RadioGroup>
+
+
+
+
+   </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/black">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv1"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:text="August 2023 - March 2024 : ICT Instructor (STI Caloocan)"
+                android:textAlignment="center">
+
+            </TextView>
+            <TextView
+                android:id="@+id/tv2"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:text="August 2022 - March 2023 : ICT Instructor (STI Munoz)"
+                android:textAlignment="center">
+            </TextView>
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:text="June 2021 - February 2022 : Admin Supervisor"
+                android:textAlignment="center">
+
+            </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PHP: 70%" />
+
+            <SeekBar
+                android:id="@+id/sk1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="70" />
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java: 40%" />
+
+            <SeekBar
+                android:id="@+id/sk2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="40" />
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Python: 40%" />
+
+            <SeekBar
+                android:id="@+id/sk3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="40" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+</ScrollView>
+
+</LinearLayout>
